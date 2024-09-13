@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Section = ({
     title,
@@ -24,12 +25,12 @@ const Section = ({
                             {text}
                         </p>
                         {buttonText && (
-                            <a
-                                href={buttonLink}
+                            <Link
+                                to={buttonLink}
                                 className="bg-orange-500 text-white text-lg py-3 px-6 rounded-lg shadow-lg hover:bg-orange-400 transition-colors"
                             >
                                 {buttonText}
-                            </a>
+                            </Link>
                         )}
                     </div>
 
